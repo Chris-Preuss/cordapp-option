@@ -11,11 +11,11 @@ val DUMMY_CURRENT_DATE = Instant.parse("2017-07-03T10:15:30.00Z")!!
 val OPTION_CURRENCY = USD
 val RISK_FREE_RATE = 0.01
 
-val COMPANY_STOCK_1 = "The Carlsbad National Bank"
-val COMPANY_STOCK_2 = "Wilburton State Bank"
-val COMPANY_STOCK_3 = "De Soto State Bank"
-val COMPANY_STOCK_4 = "Florida Traditions Bank"
-val COMPANY_STOCK_5 = "CorEast Federal Savings Bank"
+val COMPANY_STOCK_1 = "IE"
+val COMPANY_STOCK_2 = "BUSINESS"
+val COMPANY_STOCK_3 = "SCHOOL"
+val COMPANY_STOCK_4 = "MADRID"
+val COMPANY_STOCK_5 = "SPAIN"
 
 val COMPANY_AMOUNT_1 = Amount(300, OPTION_CURRENCY)
 val COMPANY_AMOUNT_2 = Amount(500, OPTION_CURRENCY)
