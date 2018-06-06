@@ -162,7 +162,8 @@ data class OptionState(
     companion object {
 
         fun calculatePremium(optionState: OptionState, volatility: Volatility): Amount<Currency> {
-            val blackScholes = BlackScholes(optionState.spotPriceAtPurchase.quantity.toDouble(), optionState.strikePrice.quantity.toDouble(), RISK_FREE_RATE, 100.toDouble(), volatility.value)
+            val blackScholes = BlackScholes(optionState.spotPriceAtPurchase.quantity.toDouble(),  - 
+		optionState.strikePrice.quantity.toDouble(), RISK_FREE_RATE, 100.toDouble(), volatility.value)
             val value = if (optionState.optionType == OptionType.CALL) {
                 blackScholes.BSCall().toLong() * 100
             } else {
@@ -174,5 +175,6 @@ data class OptionState(
 
     override val participants get() = listOf(owner, issuer)
 
-    override fun toString() = "${this.optionType.name} option on ${this.underlyingStock} at strike ${this.strikePrice} expiring on ${this.expiryDate}"
+    override fun toString() = "${this.optionType.name} option on ${this.underlyingStock} at  - 
+	- strike ${this.strikePrice} expiring on ${this.expiryDate}"
 }
